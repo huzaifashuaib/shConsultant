@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -19,8 +19,37 @@
   }
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+  font-family: "Archivo", Sans-serif;
+}
+
+.backgroundImage {
+  background-image: url("../../public/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footerBackground {
+  background-image: url("../../public/assets/footerbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.introBackground {
+  background-image: url("../../public/assets/techBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 10px 5px rgba(12.98, 32.3, 4, 0.5);
 }
