@@ -1,22 +1,21 @@
 import NavBar from "../components/navBar/NavBar";
-import HeroSection from "../components/heroSection/HeroSection";
-import IntroSection from "../components/introSection/IntroSection";
-import Services from "../components/servicesSection/Services";
-import KeyFactor from "../components/keyFactorSection/KeyFactor";
-import TeamSection from "../components/team/TeamSection";
-import ContactSection from "../components/conatctSection/ContactSection";
+import HeroSection from "../components/home/heroSection/HeroSection";
+import IntroSection from "../components/home/introSection/IntroSection";
+import ServicesSection from "../components/home/servicesSection/Services";
+import KeyFactorSection from "../components/home/keyFactorSection/KeyFactor";
+import TeamSection from "../components/home/team/TeamSection";
+import ContactSection from "../components/home/conatctSection/ContactSection";
 import Footer from "../components/footer/Footer";
-
 export default function Home() {
   return (
     <>
-      <div className="backgroundImage  lg:pt-[22px] xl:pt-[15px] ">
+      <div className="backgroundImage lg:pt-5.5 xl:pt-3.75 ">
         <NavBar />
         <HeroSection />
       </div>
       <IntroSection />
-      <Services />
-      <KeyFactor />
+      <ServicesSection />
+      <KeyFactorSection />
       <TeamSection />
       <ContactSection />
       <Footer />
