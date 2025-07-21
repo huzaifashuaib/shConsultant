@@ -23,6 +23,13 @@ const NavBar = () => {
   const handleToggle = () => setIsOpen(!isOpen);
   return (
     <>
+      {/*Transparency  */}
+      <div
+        className={`fixed inset-0 bg-black/80 transition-opacity duration-500 z-10  ${
+          isOpen ? "opacity-100 " : "opacity-0 invisible"
+        }`}
+        onClick={handleToggle}
+      />
       <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-2 mb-3 xl:mb-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 right-0 left-0 z-3 lg:z-0 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
           <Link href={""}>
@@ -82,16 +89,10 @@ const NavBar = () => {
       </nav>
 
       {/* Mobile Nav */}
-      {/*Transparency  */}
-      <div
-        className={`fixed inset-0 bg-black/80 transition-opacity duration-500 z-10  ${
-          isOpen ? "opacity-100 " : "opacity-0 invisible"
-        }`}
-        onClick={handleToggle}
-      />
+
       <div
         className={`fixed top-0 right-0 bottom-0 h-full overflow-auto w-full flex flex-col justify-between gap-10 sm:w-75 bg-white px-5 z-50 shadow-xl transform transition-all duration-800 ease-in-out ${
-          isOpen ? "translate-x-0 invisible" : "translate-x-full"
+          isOpen ? "translate-x-0 " : "translate-x-full"
         } `}
       >
         <div>
