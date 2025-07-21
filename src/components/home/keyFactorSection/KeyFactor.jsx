@@ -9,7 +9,7 @@ const KeyFactor = () => {
         <h1 className="text-3xl md:text-4xl font-semibold text-slate-800 pb-4">
           KEY FACTORS
         </h1>
-        <p className="text-[18px] text-slate-600 mb-8.5">
+        <p className="text-[18px] text-slate-600 md:mb-8.5">
           French Companies Exploring Business Opportunities in Pakistan
         </p>
         <button className="group hidden cursor-pointer md:flex py-3.75 px-5 font-medium text-base rounded-lg bg-primary hover:ring-2 hover:ring-[#a1b2e7] hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md">
@@ -20,7 +20,10 @@ const KeyFactor = () => {
 
       <div className="w-full pt-[20%] px-[4%] md:pt-22.5 md:pr-22.5 md:pb-12.5 md:pl-18 md:border-l md:border-[#555555]">
         {keyFactorData.map((data, index) => (
-          <div className="flex gap-5 md:gap-10 mb-22.5 last:mb-0" key={index}>
+          <div
+            className="flex gap-5 md:gap-10 mb-6 md:mb-22.5 last:mb-0"
+            key={index}
+          >
             <h1 className="mt-2.75 text-3xl text-slate-800 font-medium">
               0{index + 1}
             </h1>
