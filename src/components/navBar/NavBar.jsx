@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../../public/assets/logo.png";
@@ -10,17 +10,25 @@ import frFlag from "../../../public/assets/fr-flag.png";
 
 const NavBar = () => {
   const navLinks = [
-    { href: "", name: "About Us" },
-    { href: "", name: "Our Services" },
-    { href: "", name: "Team France Export" },
-    { href: "", name: "Key Factors" },
-    { href: "", name: "Our Team" },
+    { href: "/#about", name: "About Us" },
+    { href: "/#services", name: "Our Services" },
+    { href: "/team-france-export", name: "Team France Export" },
+    { href: "/#keyFactor", name: "Key Factors" },
+    { href: "/#team", name: "Our Team" },
     { href: "", name: "Technology Services" },
     { href: "", name: "Case Study" },
     { href: "", name: "List of Distributors" },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+
   return (
     <>
       {/*Transparency  */}
@@ -30,7 +38,7 @@ const NavBar = () => {
         }`}
         onClick={handleToggle}
       />
-      <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-2 mb-3 xl:mb-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 right-0 left-0 z-3 lg:z-0 ">
+      <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-2 mb-3 xl:mb-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
           <Link href={""}>
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />
@@ -46,7 +54,7 @@ const NavBar = () => {
               alt="Site Logo"
               height={0}
               width={0}
-              className="h-full object-contain w-[33%] sm:w-[20%] md:w-[20%] lg:w-[62%]"
+              className="h-full object-contain w-1/4 sm:max-md:w-1/5 lg:w-[62%]"
             />
           </Link>
 
@@ -65,7 +73,7 @@ const NavBar = () => {
           </ul>
 
           <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-2 md:flex-col-reverse lg:flex-col xl:flex-row  ">
-            <button className="text-base py-2.5 px-6 cursor-pointer rounded-md font-medium bg-primary bg-hover:ring-2 hover:ring-[#a1b2e7] hover:bg-hover-color  text-white shadow-xs lg:flex hidden">
+            <button className="text-base py-2.5 px-6 cursor-pointer rounded-md font-medium bg-primary bg-hover:ring-2 hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs lg:flex hidden">
               Contact Us
             </button>
 
@@ -103,27 +111,26 @@ const NavBar = () => {
               className="object-contain h-14 w-20 relative pt-2.5"
             />
             <button onClick={handleToggle} className="cursor-pointer">
-              <RxCross2 size={13} />
+              <RxCross2 size={20} />
             </button>
           </div>
           <ul className=" list-none pt-5  ">
             {navLinks.map((nav, index) => (
               <li
                 key={index}
-                className="py-1 tracking-tighter group text-base text-[#161616] whitespace-nowrap relative"
+                className="py-1 tracking-tighter text-base text-[#161616] whitespace-nowrap "
               >
                 <Link href={nav.href}>{nav.name}</Link>
-                <span className="absolute left-0 -bottom-0.25 h-0.5 w-0 bg-[#7a7a7a] transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="flex flex-col gap-5 mb-10 md:mb-20">
-          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-[#a1b2e7] hover:bg-hover-color  text-white shadow-xs">
+          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs">
             Contact Us
           </button>
-          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-[#a1b2e7] hover:bg-hover-color  text-white shadow-xs">
+          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs">
             Book a Call
           </button>
         </div>

@@ -2,7 +2,21 @@
 
 @theme {
   --color-primary: #002494;
+  --color-dark-blue: #000f3d;
   --color-hover-color: #2b52ca;
+  --color-customBlue: #a1b2e7;
+  --color-dark-brown: #333;
+  --color-light-pink: #c36;
+  --color-light-gray: #ebebeb;
+
+  /* letter spacing */
+  --tracking-tightest: -1px;
+
+  /* shadow */
+  --shadow-bg: 0px -4px 44px 0px rgba(0, 15, 61, 0.5);
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
   font-family: "Archivo", Sans-serif;

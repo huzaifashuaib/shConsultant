@@ -4,12 +4,12 @@ import { introData } from "./introData";
 
 const IntroSection = () => {
   return (
-    <section className="introBackground pt-13.75 pb-12.5 md:py-12.5">
+    <section id="about" className="introBackground pt-13.75 pb-12.5 md:py-12.5">
       <div className="px-[4%] sm:pb-[4%] md:pb[6%] md:max-w-390 mx-auto ">
         <h1 className="mb-5 text-3xl md:text-4xl font-semibold text-white">
           WHO ARE WE?
         </h1>
-        <p className="mb-3.5 font-normal text-base md:text-[18px] text-slate-400">
+        <p className="mb-3.5 font-normal text-base md:text-lg text-slate-400">
           At <strong>S&H Business Consultants</strong>, we specialize in guiding
           French companies eager to explore, expand and capitalize on business
           opportunities in Pakistan. Our expertise are tailored to navigate the

@@ -1,0 +1,36 @@
+import React from "react";
+
+const OurMission = () => {
+  const supportPoints = [
+    "Strengthen France-Pakistan Business Relations - Encouraging collaboration between French and Pakistani enterprises.",
+    "Facilitate Trade & Investment - Creating opportunities for sustainable economic growth.",
+    "Support Business Expansion - Providing companies with the tools, strategies, and connections they need to succeed in a competitive international market.",
+    "Promote Innovation & Digital Transformation - Helping businesses leverage technology, AI, and digital strategies to enhance their global reach.",
+  ];
+
+  return (
+    <div className="bg-dark-blue shadow-bg py-10">
+      <div className="max-w-330 mx-auto p-2.5">
+        <h1 className="text-4xl md:text-3xl text-white font-semibold mb-3.5">
+          Our Missions & Objectives
+        </h1>
+        <p className="text-base md:text-lg text-slate-400 mb-3.5">
+          Through our partnership with Team France Export, our mission is to:
+        </p>
+        <ul>
+          {supportPoints.map((text, index) => (
+            <li
+              key={index}
+              className="text-base md:text-lg text-slate-400 flex items-start gap-1"
+            >
+              <span className="size-1.25 rounded-full bg-slate-400 flex-shrink-0 mt-2.5 mx-3"></span>
+              {text}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default OurMission;

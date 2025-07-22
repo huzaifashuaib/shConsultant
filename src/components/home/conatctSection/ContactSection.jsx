@@ -9,7 +9,7 @@ const ContactSection = () => {
         <h1 className="text-3xl md:text-4xl text-center mb-3 font-semibold md:font-bold text-slate-800">
           Let&apos;s Talk
         </h1>
-        <p className="text-slate-600 text-[18px] text-center mb-9 md:mb-10 lg:mb-12 ">
+        <p className="text-slate-600 text-lg text-center mb-9 md:mb-10 lg:mb-12 ">
           We&apos;re always happy to hear from anyone interested in working with
           or for us. Please use the dropdown form below to get in touch!
         </p>
@@ -20,7 +20,7 @@ const ContactSection = () => {
           <div className="w-full">
             <label
               htmlFor=""
-              className="text-base font-bold text-[#333] flex gap-1 pb-1.5"
+              className="text-base font-bold text-dark-brown flex gap-1 pb-1.5"
             >
               Name <span className="text-red-600">*</span>
             </label>
@@ -32,7 +32,7 @@ const ContactSection = () => {
           <div className="w-full">
             <label
               htmlFor=""
-              className="text-base font-bold text-[#333] flex gap-1 pb-1.5"
+              className="text-base font-bold text-dark-brown flex gap-1 pb-1.5"
             >
               Email Address <span className="text-red-600">*</span>
             </label>
@@ -45,7 +45,7 @@ const ContactSection = () => {
         <div className="mb-7 md:mb-9">
           <label
             htmlFor=""
-            className="text-base font-bold text-[#333] flex gap-1 pb-1.5"
+            className="text-base font-bold text-dark-brown flex gap-1 pb-1.5"
           >
             Message <span className="text-red-600">*</span>
           </label>
@@ -57,7 +57,7 @@ const ContactSection = () => {
           />
         </div>
 
-        <button className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-[#a1b2e7] hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out shadow-sm mb-5">
+        <button className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out shadow-sm mb-5">
           Submit
         </button>
       </form>

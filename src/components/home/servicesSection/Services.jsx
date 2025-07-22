@@ -5,7 +5,7 @@ import { serviceData } from "./serivceData";
 
 const Services = () => {
   return (
-    <section className="pt-13.75 pb-12.5 md:py-12.5 h-full">
+    <section id="services" className="pt-13.75 pb-12.5 md:py-12.5 h-full">
       <div className="px-[4%] pb-[4%]">
         <h1 className="text-center text-2xl md:text-xl text-black mb-8.5 font-bold">
           An overview of what we do
@@ -21,7 +21,7 @@ const Services = () => {
             sports equipment & accessories, leather products, and surgical
             instruments etc) Contact Us
           </p>
-          <button className="group flex cursor-pointer w-fit py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-[#a1b2e7] hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center gap-2 text-white shadow-md">
+          <button className="group flex cursor-pointer w-fit py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center gap-2 text-white shadow-md">
             Contact Us
             <FaLongArrowAltRight className=" transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
           </button>
@@ -50,7 +50,7 @@ const Services = () => {
           ))}
         </div>
 
-        <button className="group md:hidden mb-10 flex w-full py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-[#a1b2e7] hover:bg-hover-color hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md">
+        <button className="group md:hidden mb-10 flex w-full py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md">
           Contact Us
           <FaLongArrowAltRight className="transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
         </button>

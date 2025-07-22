@@ -5,7 +5,7 @@ import { members } from "./teamData";
 
 const TeamSection = () => {
   return (
-    <div className="my-15 px-[4%] pt-[5%] md:max-w-390 mx-auto">
+    <div id="team" className="my-15 px-[4%] pt-[5%] md:max-w-390 mx-auto">
       <h1 className="text-4xl font-semibold uppercase text-slate-800 mb-5">
         Meet the Core Team
       </h1>
@@ -16,7 +16,7 @@ const TeamSection = () => {
             className="mx-0 md:mx-2.5 w-full md:w-1/2 flex flex-col"
             key={index}
           >
-            <div className="mx-auto -mb-12.5 max-xl:h-62.5 w-[89%] max-lg:w-[65%] xl:w-[50%] xl:h-100 relative rounded-xl overflow-hidden">
+            <div className="mx-auto -mb-12.5 max-xl:h-62.5 w-[89%] max-lg:w-[65%] xl:w-1/2 xl:h-100 relative rounded-xl overflow-hidden">
               <Image
                 src={member.image}
                 alt={member.alt}
@@ -25,10 +25,10 @@ const TeamSection = () => {
               />
             </div>
             <div className="flex-1 flex-col px-5 pb-5 pt-16.5 rounded-3xl custom-shadow flex h-full">
-              <h1 className="text-[18px] md:text-xl text-slate-800 font-medium text-center mt-2">
+              <h1 className="text-lg md:text-xl text-slate-800 font-medium text-center mt-2">
                 {member.name}
               </h1>
-              <p className="text-[18px] text-primary text-center font-medium">
+              <p className="text-lg text-primary text-center font-medium">
                 {member.title}
               </p>
 
@@ -53,7 +53,7 @@ const TeamSection = () => {
                 {member.email}
               </Link>
 
-              <p className="text-center text-base md:text-[18px] font-light text-slate-600">
+              <p className="text-center text-base md:text-lg font-light text-slate-600">
                 {member.description}
               </p>
             </div>
