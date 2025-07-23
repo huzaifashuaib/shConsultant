@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { serviceData } from "./serivceData";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -21,10 +22,13 @@ const Services = () => {
             sports equipment & accessories, leather products, and surgical
             instruments etc) Contact Us
           </p>
-          <button className="group flex cursor-pointer w-fit py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center gap-2 text-white shadow-md">
+          <Link
+            href={"/#contactSection"}
+            className="group flex cursor-pointer w-fit py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center gap-2 text-white shadow-md"
+          >
             Contact Us
             <FaLongArrowAltRight className=" transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
-          </button>
+          </Link>
         </div>
       </div>
       <div className=" px-[4%] pt-[5%] md:max-w-390 mx-auto  ">
@@ -50,10 +54,13 @@ const Services = () => {
           ))}
         </div>
 
-        <button className="group md:hidden mb-10 flex w-full py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md">
+        <Link
+          href={"/#contactSection"}
+          className="group md:hidden mb-10 flex w-full py-3.75 px-5 font-bold rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md"
+        >
           Contact Us
           <FaLongArrowAltRight className="transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import { manrope } from "../../../libs/fonts";
 const ExportFrance = () => {
   return (
     <div className="max-w-330 mx-auto px-2.5 max-lg:pt-36 pt-12.5 pb-20 flex flex-col gap-12">
-      {/* <div className="max-w-390 mx-auto px-[3%] pt-[3%] max-xl:pt-32"> */}
       <Image
         src={teamFranceIcon}
         alt="teamFranceIcon"
@@ -24,7 +23,10 @@ const ExportFrance = () => {
       <div className="text-black max-md:text-base text-lg space-y-3.5 mb-5">
         <p>
           As the{" "}
-          <Link href={""} className="text-light-pink">
+          <Link
+            href={""}
+            className="text-light-pink hover:text-slate-700 transition-all ease-in-out duration-200"
+          >
             official partner
           </Link>{" "}
           of Team France Export in Pakistan, we specialize in helping French

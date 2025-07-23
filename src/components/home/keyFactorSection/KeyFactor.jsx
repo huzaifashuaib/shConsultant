@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { keyFactorData } from "./keyFactorData";
+import Link from "next/link";
 
 const KeyFactor = () => {
   return (
@@ -15,10 +16,13 @@ const KeyFactor = () => {
         <p className="text-lg text-slate-600 md:mb-8.5">
           French Companies Exploring Business Opportunities in Pakistan
         </p>
-        <button className="group hidden cursor-pointer md:flex py-3.75 px-5 font-medium text-base rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md">
+        <Link
+          href={"/#contactSection"}
+          className="group hidden w-fit cursor-pointer md:flex py-3.75 px-5 font-medium text-base rounded-lg bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 text-white shadow-md"
+        >
           Contact Us
           <FaLongArrowAltRight className="transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
-        </button>
+        </Link>
       </div>
 
       <div className="w-full pt-[20%] px-[4%] md:pt-22.5 md:pr-22.5 md:pb-12.5 md:pl-18 md:border-l md:border-[#555555]">

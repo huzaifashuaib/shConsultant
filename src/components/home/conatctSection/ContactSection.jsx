@@ -4,7 +4,7 @@ import footerWorld from "../../../../public/assets/footerworld.png";
 
 const ContactSection = () => {
   return (
-    <div className="footerBackground">
+    <div id="contactSection" className="footerBackground">
       <div className="pt-[10%] max-md:px-[6%] px-[3%] lg:pt-[5%] xl:pt-[4%]">
         <h1 className="text-3xl md:text-4xl text-center mb-3 font-semibold md:font-bold text-slate-800">
           Let&apos;s Talk

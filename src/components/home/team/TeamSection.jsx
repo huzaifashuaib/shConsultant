@@ -10,7 +10,7 @@ const TeamSection = () => {
         Meet the Core Team
       </h1>
 
-      <div className="flex md:flex-row flex-col w-full pt-7.5 gap-10">
+      <div className="flex md:flex-row flex-col w-full pt-7.5 max-md:gap-10">
         {members.map((member, index) => (
           <div
             className="mx-0 md:mx-2.5 w-full md:w-1/2 flex flex-col"

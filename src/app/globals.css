@@ -45,3 +45,52 @@ html {
 .custom-shadow {
   box-shadow: 0px 0px 10px 5px rgba(12.98, 32.3, 4, 0.5);
 }
+.technologyBackground {
+  background-image: url("../../public/assets/technologyBack.webp");
+  background-color: #000f3d;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.custom-drop-shadow {
+  filter: drop-shadow(0px 4px 10px rgba(0, 36, 148, 0.6));
+}
+.marquee-Gradient {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 20%,
+    #000 80%,
+    transparent
+  );
+}
+.swiper {
+  padding-top: 60px !important;
+  position: relative !important;
+}
+.swiper-pagination {
+  top: 0px !important;
+  bottom: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  z-index: 200 !important;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  width: 32px;
+  height: 5px;
+  border-radius: 0;
+  background-color: #888;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.mySwiper .swiper-pagination-bullet:hover {
+  background-color: aqua;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #c3c3c3;
+  opacity: 1;
+}

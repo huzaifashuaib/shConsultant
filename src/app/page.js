@@ -9,7 +9,7 @@ import Footer from "../components/footer/Footer";
 export default function Home() {
   return (
     <>
-      <div className="backgroundImage lg:pt-5.5 xl:pt-3.75 ">
+      <div className="backgroundImage ">
         <NavBar />
         <HeroSection />
       </div>

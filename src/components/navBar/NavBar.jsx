@@ -15,8 +15,8 @@ const NavBar = () => {
     { href: "/team-france-export", name: "Team France Export" },
     { href: "/#keyFactor", name: "Key Factors" },
     { href: "/#team", name: "Our Team" },
-    { href: "", name: "Technology Services" },
-    { href: "", name: "Case Study" },
+    { href: "/technology-services", name: "Technology Services" },
+    { href: "/case-studies", name: "Case Study" },
     { href: "", name: "List of Distributors" },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const NavBar = () => {
         }`}
         onClick={handleToggle}
       />
-      <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-2 mb-3 xl:mb-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
+      <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
           <Link href={""}>
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />

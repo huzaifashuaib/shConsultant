@@ -10,7 +10,10 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto  px-2.5 md:px-10">
         <p className="text-slate-800 text-base w-full max-md:text-center ">
           Copyright © {year} S&H Business Consultants &{" "}
-          <Link href={""} className="text-light-pink cursor-pointer">
+          <Link
+            href={""}
+            className="text-light-pink cursor-pointer hover:text-slate-700 transition-all ease-in-out duration-200 "
+          >
             Privacy Policy
           </Link>
         </p>

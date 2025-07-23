@@ -19,7 +19,10 @@ const TeamPartner = () => {
         </h1>
         <p className="mb-3.5 text-base md:text-lg text-slate-400 ">
           As the{" "}
-          <Link href={""} className="text-light-pink">
+          <Link
+            href={""}
+            className="text-light-pink hover:text-slate-700 transition-all ease-in-out duration-200"
+          >
             official partner
           </Link>{" "}
           of Team France Export in Pakistan, S&H Business Consultants acts as
