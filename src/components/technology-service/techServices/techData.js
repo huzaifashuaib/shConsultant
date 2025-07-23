@@ -10,11 +10,11 @@ import image2C from "../../../../public/assets/technology/Consultant/2.png";
 import image3C from "../../../../public/assets/technology/Consultant/3.png";
 import image4C from "../../../../public/assets/technology/Consultant/4.png";
 import image5C from "../../../../public/assets/technology/Consultant/5.png";
-import image1D from "../../../../public/assets/technology/Design/1.png";
-import image2D from "../../../../public/assets/technology/Design/2.png";
-import image3D from "../../../../public/assets/technology/Design/3.png";
-import image4D from "../../../../public/assets/technology/Design/4.png";
-import image5D from "../../../../public/assets/technology/Design/5.png";
+import image1D from "../../../../public/assets/technology/design/1.png";
+import image2D from "../../../../public/assets/technology/design/2.png";
+import image3D from "../../../../public/assets/technology/design/3.png";
+import image4D from "../../../../public/assets/technology/design/4.png";
+import image5D from "../../../../public/assets/technology/design/5.png";
 
 export const technologyData = [
   {
