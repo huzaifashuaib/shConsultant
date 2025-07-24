@@ -5,13 +5,13 @@ import worldLogo from "../../../../public/assets/worldImg.png";
 
 const HeroSection = () => {
   return (
-    <div className="pt-[3%] px-[4%] flex flex-col justify-center items-center gap-5 h-full max-lg:pt-34">
+    <div className="px-[4%] flex flex-col justify-center items-center gap-5 h-full pt-23.5 min-sm:max-md:pt-30 min-lg:pt-[3%] min-md:max-lg:pt-34">
       <Image
         src={teamFranceLogo}
         alt="heroSectionlogo"
         width={0}
         height={0}
-        className="h-full w-[18%] md:w-[10%] lg:w-[10%] xl:w-[6%] object-contain"
+        className="h-full max-md:w-[18%] lg:w-[10%] max-2xl:w-[8%] 2xl:w-[6%]  object-contain lg:mt-35"
       />
       <h1 className="text-3xl md:text-5xl lg:text-[56px] text-slate-800 lg:leading-16 font-bold text-center tracking-tightest">
         Assisting French and other foreign companies explore business

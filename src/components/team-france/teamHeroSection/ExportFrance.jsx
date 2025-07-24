@@ -11,7 +11,7 @@ const ExportFrance = () => {
         alt="teamFranceIcon"
         width={0}
         height={0}
-        className="mx-auto"
+        className="mx-auto md:mt-35"
       />
       <h1
         className={`${manrope.className} text-slate-800 max-md:text-3xl max-md:leading-9 text-6xl font-semibold leading-18 tracking-tightest`}

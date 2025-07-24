@@ -67,7 +67,7 @@ const ContactSection = () => {
         alt="World Image"
         width={0}
         height={0}
-        className="flex justify-center mx-auto"
+        className="mx-auto"
       />
     </div>
   );

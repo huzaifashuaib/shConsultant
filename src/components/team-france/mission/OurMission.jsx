@@ -21,9 +21,8 @@ const OurMission = () => {
           {supportPoints.map((text, index) => (
             <li
               key={index}
-              className="text-base md:text-lg text-slate-400 flex items-start gap-1"
+              className="text-base md:text-lg text-slate-400 list-disc list-outside ml-6"
             >
-              <span className="size-1.25 rounded-full bg-slate-400 flex-shrink-0 mt-2.5 mx-3"></span>
               {text}
             </li>
           ))}

@@ -32,9 +32,8 @@ const TeamPartner = () => {
           {partnerText.map((text, index) => (
             <li
               key={index}
-              className="flex items-start gap-1 text-slate-400 text-base md:text-lg leading-relaxed "
+              className="text-slate-400 text-base md:text-lg leading-relaxed list-disc list-outside ml-6"
             >
-              <span className="w-1.25 h-1.25 bg-slate-400 rounded-full mt-3.5 mr-2 flex-shrink-0 ml-2"></span>
               {text}
             </li>
           ))}

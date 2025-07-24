@@ -1,6 +1,8 @@
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Archivo } from "next/font/google";
+import Footer from "../components/footer/Footer";
+import NavBar from "../components/navBar/NavBar";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -14,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`$ ${archivo.variable} antialiased relative `}>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

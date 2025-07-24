@@ -35,7 +35,7 @@ const NavBar = () => {
         }`}
         onClick={handleToggle}
       />
-      <nav className="w-full max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
+      <nav className="w-full absolute z-20 px-5 bg-[#EFF4F9] py-4 md:py-2 lg:py-5 lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
           <Link href={""}>
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />
@@ -44,18 +44,18 @@ const NavBar = () => {
             <Image src={frFlag} alt="fr-flag" width={24} height={24} />
           </Link>
         </div>
-        <div className="flex justify-between items-center">
-          <Link href="/" className="max-lg:w-full">
+        <div className="flex justify-around items-center">
+          <Link href="/">
             <Image
               src={logo}
               alt="Site Logo"
               height={0}
               width={0}
-              className="h-full object-contain w-1/4 sm:max-md:w-1/5 lg:w-[62%]"
+              className=" object-contain max-md:w-[54%] md:max-lg:w-[40%] w-[62%] mx-auto"
             />
           </Link>
 
-          <ul className=" list-none items-center flex-wrap justify-center lg:max-w-150 xl:max-w-200 2xl:max-w-full hidden lg:flex relative ">
+          <ul className=" list-none items-center flex-wrap justify-center lg:max-w-150 xl:max-w-200 2xl:max-w-full hidden lg:flex">
             {navLinks.map((nav, index) => (
               <li
                 key={index}
@@ -72,7 +72,7 @@ const NavBar = () => {
           <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-2 md:flex-col-reverse lg:flex-col xl:flex-row  ">
             <Link
               href={"/#contactSection"}
-              className="text-base py-2.5 px-6 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden"
+              className="text-base py-2.5 px-6 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap"
             >
               Contact Us
             </Link>
@@ -124,6 +124,7 @@ const NavBar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={index}
+                onClick={handleToggle}
                 className="py-1 tracking-tighter text-base text-[#161616] whitespace-nowrap "
               >
                 <Link href={nav.href}>{nav.name}</Link>
