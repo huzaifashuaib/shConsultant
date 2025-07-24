@@ -134,12 +134,18 @@ const NavBar = () => {
         </div>
 
         <div className="flex flex-col gap-5 mb-10 md:mb-20">
-          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs">
+          <Link
+            href={"/#contactSection"}
+            className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
+          >
             Contact Us
-          </button>
-          <button className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs">
+          </Link>
+          <Link
+            href={""}
+            className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
+          >
             Book a Call
-          </button>
+          </Link>
         </div>
       </div>
     </>
