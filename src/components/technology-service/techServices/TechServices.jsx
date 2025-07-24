@@ -22,7 +22,8 @@ const TechServices = () => {
     setImagesSet(update[index].images);
   };
   return (
-    <div className="max-w-345 mx-auto p-5 md:py-25 md:p-2.5 flex flex-col gap-6 md:gap-8">
+    <div className="max-w-345 mx-auto p-5 md:py-25 md:px-5 flex flex-col gap-6 md:gap-8">
+      {/* <div className="max-w-345 mx-auto p-5 md:py-25 md:p-2.5 flex flex-col gap-6 md:gap-8"> */}
       <h1 className="text-3xl md:text-4xl font-semibold text-white  ">
         TECHNOLOGY SERVICES
       </h1>
@@ -80,7 +81,7 @@ const TechServices = () => {
               <Image
                 src={image}
                 alt={index + 1}
-                className="w-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </SwiperSlide>
           ))}

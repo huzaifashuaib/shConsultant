@@ -9,7 +9,8 @@ const page = () => {
   return (
     <div>
       <NavBar />
-      <div className="technologyBackground pt-36.25 md:pt-75 lg:pt-50 custom-drop-shadow">
+      <div className="technologyBackground pt-26.25 md:pt-35 lg:pt-20 custom-drop-shadow">
+        {/* <div className="technologyBackground pt-36.25 md:pt-75 lg:pt-50 custom-drop-shadow"> */}
         <HeroSection />
         <TechServices />
       </div>

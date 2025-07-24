@@ -9,7 +9,8 @@ import Link from "next/link";
 
 const HeroSectionTechnology = () => {
   return (
-    <div className="max-w-345 mx-auto pt-12.5 p-2.5 overflow-x-hidden">
+    <div className="max-w-345 mx-auto pt-12.5  px-5 overflow-x-hidden">
+      {/* <div className="max-w-345 mx-auto pt-12.5 p-2.5 overflow-x-hidden"> */}
       <div className="flex flex-col gap-2.5 ">
         <h5
           className={` ${manrope.className} text-sm md:text-xl font-light text-white`}

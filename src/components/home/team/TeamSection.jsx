@@ -16,7 +16,8 @@ const TeamSection = () => {
             className="mx-0 md:mx-2.5 w-full md:w-1/2 flex flex-col"
             key={index}
           >
-            <div className="mx-auto -mb-12.5 max-xl:h-62.5 w-[89%] max-lg:w-[65%] xl:w-1/2 xl:h-100 relative rounded-xl overflow-hidden">
+            <div className="mx-auto -mb-12.5 max-2xl:h-62.5 w-[89%] min-md:max-2xl:w-[65%] 2xl:w-1/2 2xl:h-100 relative rounded-xl overflow-hidden">
+              {/* <div className="mx-auto -mb-12.5 max-xl:h-62.5 w-[89%] max-lg:w-[65%] xl:w-1/2 xl:h-100 relative rounded-xl overflow-hidden"> */}
               <Image
                 src={member.image}
                 alt={member.alt}

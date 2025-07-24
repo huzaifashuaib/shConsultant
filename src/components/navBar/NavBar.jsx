@@ -17,16 +17,13 @@ const NavBar = () => {
     { href: "/#team", name: "Our Team" },
     { href: "/technology-services", name: "Technology Services" },
     { href: "/case-studies", name: "Case Study" },
-    { href: "", name: "List of Distributors" },
+    { href: "/list-distributors", name: "List of Distributors" },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen(!isOpen);
+
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
   return (
@@ -38,7 +35,7 @@ const NavBar = () => {
         }`}
         onClick={handleToggle}
       />
-      <nav className=" max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
+      <nav className="w-full max-lg:w-full px-5 bg-[#EFF4F9] max-w-415 py-4 md:py-2 lg:py-5 mx-auto lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
           <Link href={""}>
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />
@@ -73,9 +70,12 @@ const NavBar = () => {
           </ul>
 
           <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-2 md:flex-col-reverse lg:flex-col xl:flex-row  ">
-            <button className="text-base py-2.5 px-6 cursor-pointer rounded-md font-medium bg-primary bg-hover:ring-2 hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs lg:flex hidden">
+            <Link
+              href={"/#contactSection"}
+              className="text-base py-2.5 px-6 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden"
+            >
               Contact Us
-            </button>
+            </Link>
 
             <button
               onClick={handleToggle}
@@ -84,13 +84,19 @@ const NavBar = () => {
               <FaBars size={20} />
             </button>
 
-            <div className="flex items-center gap-1 justify-end md:hidden lg:flex max-lg:w-full ">
-              <Link href={""}>
+            <div className="flex items-center gap-1.5 justify-end md:hidden lg:flex max-lg:w-full ">
+              <button
+                className=" transform hover:scale-125  transition-all duration-200 ease-in-out cursor-pointer"
+                onClick={() => changeLanguage("en")}
+              >
                 <Image src={usaFlag} alt="us-flag" width={24} height={24} />
-              </Link>
-              <Link href={""}>
+              </button>
+              <button
+                className=" transform hover:scale-125  transition-all duration-200 ease-in-out cursor-pointer"
+                onClick={() => changeLanguage("fr")}
+              >
                 <Image src={frFlag} alt="fr-flag" width={24} height={24} />
-              </Link>
+              </button>
             </div>
           </div>
         </div>
