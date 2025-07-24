@@ -11,6 +11,8 @@ const CommonStudyCase = ({ text }) => {
         <Image
           src={flag}
           alt="flag"
+          width={0}
+          height={0}
           className="object-cover w-full p-2.5 md:w-1/2"
         />
 

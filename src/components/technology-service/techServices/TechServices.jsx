@@ -81,6 +81,8 @@ const TechServices = () => {
               <Image
                 src={image}
                 alt={index + 1}
+                width={0}
+                height={0}
                 className="w-full h-auto object-cover"
               />
             </SwiperSlide>

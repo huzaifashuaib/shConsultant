@@ -45,7 +45,13 @@ const TeamPartner = () => {
         </p>
       </div>
 
-      <Image src={partnerTem} alt="partner" className="md:w-[30%]" />
+      <Image
+        src={partnerTem}
+        alt="partner"
+        className="md:w-[30%]"
+        width={0}
+        height={0}
+      />
     </div>
   );
 };

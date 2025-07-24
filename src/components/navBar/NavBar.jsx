@@ -114,6 +114,8 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="logo"
+              width={0}
+              height={0}
               className="object-contain h-14 w-20 relative pt-2.5"
             />
             <button onClick={handleToggle} className="cursor-pointer">
@@ -135,14 +137,16 @@ const NavBar = () => {
 
         <div className="flex flex-col gap-5 mb-10 md:mb-20">
           <Link
+            onClick={handleToggle}
             href={"/#contactSection"}
-            className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
+            className="text-base w-full py-1.5 text-center  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
           >
             Contact Us
           </Link>
           <Link
+            onClick={handleToggle}
             href={""}
-            className="text-base w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
+            className="text-base text-center w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
           >
             Book a Call
           </Link>

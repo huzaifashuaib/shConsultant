@@ -44,6 +44,8 @@ const HeroSectionTechnology = () => {
                 key={index}
                 src={icon}
                 alt="icon"
+                width={0}
+                height={0}
                 className="w-24 h-full shrink-0 mr-16"
               />
             ))}
@@ -61,6 +63,8 @@ const HeroSectionTechnology = () => {
                 key={index}
                 src={icon}
                 alt="icon"
+                width={0}
+                height={0}
                 className="w-24 h-full shrink-0 mr-16"
               />
             ))}

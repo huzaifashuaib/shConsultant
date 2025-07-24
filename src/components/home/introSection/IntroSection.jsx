@@ -24,7 +24,13 @@ const IntroSection = () => {
             key={index}
             className="max-md:mt-7.5 max-md:mb-10 max-md:px-[4%] first:md:pl-0 md:px-10 last:md:pr-0"
           >
-            <Image src={data.image} alt={data.alt} className="pb-2" />
+            <Image
+              src={data.image}
+              alt={data.alt}
+              className="pb-2"
+              width={0}
+              height={0}
+            />
             <h1 className="text-xl md:text-2xl mt-2 mb-4 text-white font-bold ">
               {data.title}
             </h1>
