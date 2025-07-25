@@ -1,9 +1,10 @@
 import React from "react";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const TeamFrance = () => {
   return (
-    <div className="bg-dark-blue shadow-bg">
-      <div className="bg-teamBgcolor shadow-customBg py-10 max-w-330 mx-auto p-2.5 ">
+    <div className="bg-dark-blue shadow-bg overflow-hidden">
+      <SlideUpWrapper className="bg-teamBgcolor shadow-customBg py-10 max-w-330 mx-auto p-2.5 ">
         <h1 className=" text-white max-md:text-3xl text-4xl font-semibold mb-5">
           What Is Team France Export?
         </h1>
@@ -20,7 +21,7 @@ const TeamFrance = () => {
           customized solutions to help businesses identify opportunities, find
           local partners, and adapt to foreign markets successfully.
         </p>
-      </div>
+      </SlideUpWrapper>
     </div>
   );
 };

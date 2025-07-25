@@ -1,15 +1,24 @@
+"use client";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { keyFactorData } from "./keyFactorData";
 import Link from "next/link";
+import SlideUpWrapper from "../../SlideUpWrapper";
+import { motion } from "framer-motion";
 
 const KeyFactor = () => {
   return (
     <div
-      id="keyFactor"
+      id="factorSection"
       className="md:pt-[10%] md:px-[5%] px-[4%] md:max-w-390 mx-auto flex md:flex-row flex-col relative"
     >
-      <div className="md:px-5 w-full md:sticky md:top-1/5 md:self-start md:pb-40">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0 }}
+        className="md:px-5 w-full md:sticky md:top-1/5 md:self-start md:pb-40"
+      >
         <h1 className="text-3xl md:text-4xl font-semibold text-slate-800 pb-4">
           KEY FACTORS
         </h1>
@@ -23,11 +32,11 @@ const KeyFactor = () => {
           Contact Us
           <FaLongArrowAltRight className="transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
         </Link>
-      </div>
+      </motion.div>
 
       <div className="w-full pt-[20%] px-[4%] md:pt-22.5 md:pr-22.5 md:pb-12.5 md:pl-18 md:border-l md:border-[#555555]">
         {keyFactorData.map((data, index) => (
-          <div
+          <SlideUpWrapper
             className="flex gap-5 md:gap-10 mb-6 md:mb-22.5 last:mb-0"
             key={index}
           >
@@ -43,7 +52,7 @@ const KeyFactor = () => {
                 {data.text}
               </p>
             </div>
-          </div>
+          </SlideUpWrapper>
         ))}
       </div>
     </div>

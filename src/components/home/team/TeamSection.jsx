@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { members } from "./teamData";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const TeamSection = () => {
   return (
@@ -12,7 +13,7 @@ const TeamSection = () => {
 
       <div className="flex md:flex-row flex-col w-full pt-7.5 max-md:gap-10">
         {members.map((member, index) => (
-          <div
+          <SlideUpWrapper
             className="mx-0 md:mx-2.5 w-full md:w-1/2 flex flex-col"
             key={index}
           >
@@ -58,7 +59,7 @@ const TeamSection = () => {
                 {member.description}
               </p>
             </div>
-          </div>
+          </SlideUpWrapper>
         ))}
       </div>
     </div>

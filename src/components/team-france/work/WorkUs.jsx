@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import { workData } from "./data";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const WorkUs = () => {
   return (
-    <div className="max-w-330 mx-auto py-10">
+    <SlideUpWrapper className="max-w-330 mx-auto py-10">
       <h1 className="p-2.5 md:text-4xl text-3xl font-semibold text-center">
         Why Work With Us?
       </h1>
@@ -24,7 +25,7 @@ const WorkUs = () => {
           </div>
         ))}
       </div>
-    </div>
+    </SlideUpWrapper>
   );
 };
 

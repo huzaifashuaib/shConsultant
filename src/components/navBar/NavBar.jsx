@@ -13,7 +13,7 @@ const NavBar = () => {
     { href: "/#about", name: "About Us" },
     { href: "/#services", name: "Our Services" },
     { href: "/team-france-export", name: "Team France Export" },
-    { href: "/#keyFactor", name: "Key Factors" },
+    { href: "/#factorSection", name: "Key Factors" },
     { href: "/#team", name: "Our Team" },
     { href: "/technology-services", name: "Technology Services" },
     { href: "/case-studies", name: "Case Study" },

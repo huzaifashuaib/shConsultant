@@ -8,6 +8,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const TechServices = () => {
   const [techData, setTechData] = useState(technologyData);
@@ -22,7 +23,7 @@ const TechServices = () => {
     setImagesSet(update[index].images);
   };
   return (
-    <div className="max-w-345 mx-auto p-5 md:py-25 md:px-5 flex flex-col gap-6 md:gap-8">
+    <SlideUpWrapper className="max-w-345 mx-auto p-5 md:py-25 md:px-5 flex flex-col gap-6 md:gap-8">
       {/* <div className="max-w-345 mx-auto p-5 md:py-25 md:p-2.5 flex flex-col gap-6 md:gap-8"> */}
       <h1 className="text-3xl md:text-4xl font-semibold text-white  ">
         TECHNOLOGY SERVICES
@@ -89,7 +90,7 @@ const TechServices = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </SlideUpWrapper>
   );
 };
 

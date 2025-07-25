@@ -3,9 +3,10 @@ import React from "react";
 import teamFranceIcon from "../../../../public/assets/team-france-export-svg.svg";
 import Link from "next/link";
 import { manrope } from "../../../libs/fonts";
+import SlideUpWrapper from "../../SlideUpWrapper";
 const ExportFrance = () => {
   return (
-    <div className="max-w-330 mx-auto px-2.5 max-lg:pt-36 pt-12.5 pb-20 flex flex-col gap-12">
+    <SlideUpWrapper className="max-w-330 mx-auto px-2.5 max-lg:pt-36 pt-12.5 pb-20 flex flex-col gap-12">
       <Image
         src={teamFranceIcon}
         alt="teamFranceIcon"
@@ -40,7 +41,7 @@ const ExportFrance = () => {
           ensuring seamless international expansion for our clients.
         </p>
       </div>
-    </div>
+    </SlideUpWrapper>
   );
 };
 

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import footerWorld from "../../../../public/assets/footerworld.png";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const ContactSection = () => {
   return (
     <div id="contactSection" className="footerBackground">
-      <div className="pt-[10%] max-md:px-[6%] px-[3%] lg:pt-[5%] xl:pt-[4%]">
+      <SlideUpWrapper className="pt-[10%] max-md:px-[6%] px-[3%] lg:pt-[5%] xl:pt-[4%]">
         <h1 className="text-3xl md:text-4xl text-center mb-3 font-semibold md:font-bold text-slate-800">
           Let&apos;s Talk
         </h1>
@@ -13,7 +14,7 @@ const ContactSection = () => {
           We&apos;re always happy to hear from anyone interested in working with
           or for us. Please use the dropdown form below to get in touch!
         </p>
-      </div>
+      </SlideUpWrapper>
 
       <form className="w-full lg:max-w-257 mx-auto px-[4%]">
         <div className="w-full mb-6 flex gap-2 flex-col lg:flex-row">

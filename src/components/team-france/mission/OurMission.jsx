@@ -1,4 +1,5 @@
 import React from "react";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const OurMission = () => {
   const supportPoints = [
@@ -9,8 +10,8 @@ const OurMission = () => {
   ];
 
   return (
-    <div className="bg-dark-blue shadow-bg py-10">
-      <div className="max-w-330 mx-auto p-2.5">
+    <div className="bg-dark-blue shadow-bg py-10 overflow-hidden">
+      <SlideUpWrapper className="max-w-330 mx-auto p-2.5">
         <h1 className="text-4xl md:text-3xl text-white font-semibold mb-3.5">
           Our Missions & Objectives
         </h1>
@@ -27,7 +28,7 @@ const OurMission = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </SlideUpWrapper>
     </div>
   );
 };

@@ -7,6 +7,9 @@ import OurMission from "../../components/team-france/mission/OurMission";
 import Reference from "../../components/team-france/reference/Reference";
 import Work from "../../components/team-france/work/WorkUs";
 
+export const metadata = {
+  title: "Team France Expoet - Business Consultants",
+};
 const page = () => {
   return (
     <div className="lg:pt-5.5 xl:pt-3.75">

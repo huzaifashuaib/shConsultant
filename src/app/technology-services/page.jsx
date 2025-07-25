@@ -3,6 +3,9 @@ import ContactSection from "../../components/home/conatctSection/ContactSection"
 import HeroSection from "../../components/technology-service/technologyHero/HeroSectionTechnology";
 import TechServices from "../../components/technology-service/techServices/TechServices";
 
+export const metadata = {
+  title: "Technology Service - Business Consultants",
+};
 const page = () => {
   return (
     <>

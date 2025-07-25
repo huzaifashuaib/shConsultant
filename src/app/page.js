@@ -7,7 +7,7 @@ import ContactSection from "../components/home/conatctSection/ContactSection";
 export default function Home() {
   return (
     <>
-      <div className="backgroundImage ">
+      <div className="backgroundImage overflow-hidden ">
         <HeroSection />
       </div>
       <IntroSection />

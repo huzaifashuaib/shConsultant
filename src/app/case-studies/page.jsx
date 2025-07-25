@@ -1,5 +1,9 @@
 import React from "react";
 import CaseStudy from "../../components/commonCase/CommonStudyCase";
+
+export const metadata = {
+  title: "Case Study - Business Consultants",
+};
 const page = () => {
   return (
     <div className="flex flex-col min-h-[calc(100vh-58px)] w-full">

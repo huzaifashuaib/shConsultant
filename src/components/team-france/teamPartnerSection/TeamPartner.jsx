@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import partnerTem from "../../../../public/assets/team-partner-png.webp";
 import Link from "next/link";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const partnerText = [
   "Market Entry Support - Helping French companies understand the Pakistani market, its regulatory landscape, and key business opportunities.",
@@ -12,7 +13,7 @@ const partnerText = [
 
 const TeamPartner = () => {
   return (
-    <div className="max-w-330 flex flex-col md:flex-row items-center md:max-lg:items-start md:gap-2 mx-auto py-10 md:pb-20 ">
+    <SlideUpWrapper className="max-w-330 flex flex-col md:flex-row items-center md:max-lg:items-start md:gap-2 mx-auto py-10 md:pb-20 ">
       <div className="md:w-[70%] p-2.5">
         <h1 className="md:text-4xl text-3xl font-semibold mb-3">
           Our Partnership with Team France Export
@@ -52,7 +53,7 @@ const TeamPartner = () => {
         width={0}
         height={0}
       />
-    </div>
+    </SlideUpWrapper>
   );
 };
 

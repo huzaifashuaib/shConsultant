@@ -6,10 +6,11 @@ import { swipeIcons } from "./data.js";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import SlideUpWrapper from "../../SlideUpWrapper";
 
 const HeroSectionTechnology = () => {
   return (
-    <div className="max-w-345 mx-auto pt-12.5  px-5 overflow-x-hidden">
+    <SlideUpWrapper className="max-w-345 mx-auto pt-12.5  px-5 overflow-x-hidden">
       {/* <div className="max-w-345 mx-auto pt-12.5 p-2.5 overflow-x-hidden"> */}
       <div className="flex flex-col gap-2.5 ">
         <h5
@@ -72,7 +73,7 @@ const HeroSectionTechnology = () => {
         </div>
       </div>
       <hr className="text-slate-800 text-xs" />
-    </div>
+    </SlideUpWrapper>
   );
 };
 
