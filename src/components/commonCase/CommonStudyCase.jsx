@@ -4,7 +4,7 @@ import flag from "../../../public/assets/pakfrance.webp";
 import SlideUpWrapper from "../SlideUpWrapper";
 const CommonStudyCase = ({ text }) => {
   return (
-    <SlideUpWrapper className="max-w-345 mx-auto md:p-5 w-full max-md:mt-30 min-md:max-lg:mt-22 max-md:mb-15">
+    <SlideUpWrapper className="max-w-345 mx-auto md:p-5 w-full max-md:mt-30 min-md:max-lg:mt-22 max-md:mb-15 lg:mt-35">
       <h1 className="text-3xl md:text-4xl text-slate-800 font-semibold p-2.5 uppercase">
         {text}
       </h1>
