@@ -40,7 +40,7 @@ const KeyFactor = () => {
             className="flex gap-5 md:gap-10 mb-6 md:mb-22.5 last:mb-0"
             key={index}
           >
-            <h1 className="mt-2.75 text-3xl text-slate-800 font-medium">
+            <h1 className="mt-2.75 text-3xl text-slate-800 font-medium flex">
               0{index + 1}
             </h1>
 

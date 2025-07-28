@@ -5,8 +5,8 @@ const SlideUpWrapper = ({ children, className = "" }) => {
     <motion.div
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 1, ease: "easeInOut", delay: 0 }}
+      viewport={{ once: true, amount: 0.27 }}
+      transition={{ duration: 1.2, ease: "easeInOut", delay: 0 }}
       className={`${className}`}
     >
       {children}

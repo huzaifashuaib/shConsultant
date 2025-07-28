@@ -20,12 +20,44 @@ const NavBar = () => {
     { href: "/list-distributors", name: "List of Distributors" },
   ];
   const [isOpen, setIsOpen] = useState(false);
+  const [currentLang, setCurrentLang] = useState("en");
   const handleToggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
+  const changeLanguage = (lang) => {
+    const tryChange = () => {
+      const select = document.querySelector(".goog-te-combo");
+
+      console.log(select);
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+        setCurrentLang(lang);
+        setTimeout(() => {
+          select.dispatchEvent(new Event("change"));
+          setCurrentLang(lang);
+        }, 200);
+      } else {
+        setTimeout(tryChange, 100);
+      }
+    };
+    tryChange();
+  };
+
+  useEffect(() => {
+    const detectLanguage = () => {
+      const select = document.querySelector(".goog-te-combo");
+      if (select && select.value) {
+        setCurrentLang(select.value);
+      } else {
+        setTimeout(detectLanguage, 100);
+      }
+    };
+    detectLanguage();
+  }, [setCurrentLang]);
   return (
     <>
       {/*Transparency  */}
@@ -37,12 +69,22 @@ const NavBar = () => {
       />
       <nav className="w-full absolute z-20 px-5 bg-[#EFF4F9] py-4 md:py-2 lg:py-5 lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
         <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
-          <Link href={""}>
+          <button
+            className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
+              currentLang === "en" ? "ring-2 ring-blue-500 scale-125" : ""
+            }`}
+            onClick={() => changeLanguage("en")}
+          >
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />
-          </Link>
-          <Link href={""}>
+          </button>
+          <button
+            className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
+              currentLang === "fr" ? "ring-2 ring-blue-500 scale-125" : ""
+            }`}
+            onClick={() => changeLanguage("fr")}
+          >
             <Image src={frFlag} alt="fr-flag" width={24} height={24} />
-          </Link>
+          </button>
         </div>
         <div className="flex justify-around items-center">
           <Link href="/">
@@ -54,7 +96,7 @@ const NavBar = () => {
               className=" object-contain max-md:w-[54%] md:max-lg:w-[40%] w-[62%] mx-auto"
             />
           </Link>
-
+          {/* <GoogleTranslate /> */}
           <ul className=" list-none items-center flex-wrap justify-center lg:max-w-150 xl:max-w-200 2xl:max-w-full hidden lg:flex">
             {navLinks.map((nav, index) => (
               <li
@@ -69,7 +111,7 @@ const NavBar = () => {
             ))}
           </ul>
 
-          <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-2 md:flex-col-reverse lg:flex-col xl:flex-row  ">
+          <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-4 md:flex-col-reverse lg:flex-col xl:flex-row  ">
             <Link
               href={"/#contactSection"}
               className="text-base py-2.5 px-6 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap"
@@ -84,15 +126,19 @@ const NavBar = () => {
               <FaBars size={20} />
             </button>
 
-            <div className="flex items-center gap-1.5 justify-end md:hidden lg:flex max-lg:w-full ">
+            <div className="flex items-center gap-3 justify-end md:hidden lg:flex max-lg:w-full ">
               <button
-                className=" transform hover:scale-125  transition-all duration-200 ease-in-out cursor-pointer"
+                className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
+                  currentLang === "en" ? "ring-2 ring-blue-500 scale-125" : ""
+                }`}
                 onClick={() => changeLanguage("en")}
               >
                 <Image src={usaFlag} alt="us-flag" width={24} height={24} />
               </button>
               <button
-                className=" transform hover:scale-125  transition-all duration-200 ease-in-out cursor-pointer"
+                className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
+                  currentLang === "fr" ? "ring-2 ring-blue-500 scale-125" : ""
+                }`}
                 onClick={() => changeLanguage("fr")}
               >
                 <Image src={frFlag} alt="fr-flag" width={24} height={24} />
@@ -101,9 +147,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-
       {/* Mobile Nav */}
-
       <div
         className={`fixed top-0 right-0 bottom-0 h-full overflow-auto w-full flex flex-col justify-between gap-10 sm:w-75 bg-white px-5 z-50 shadow-xl transform transition-all duration-800 ease-in-out ${
           isOpen ? "translate-x-0 " : "translate-x-full"
@@ -145,7 +189,8 @@ const NavBar = () => {
           </Link>
           <Link
             onClick={handleToggle}
-            href={""}
+            href={"https://calendly.com/saadmahmud/into-call"}
+            target="_blank"
             className="text-base text-center w-full py-1.5  rounded-lg font-normal hover:ring-2 bg-primary hover:ring-customBlue hover:bg-hover-color  text-white shadow-xs"
           >
             Book a Call

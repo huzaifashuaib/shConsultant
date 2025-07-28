@@ -2,6 +2,7 @@ import "./globals.css";
 import { Archivo } from "next/font/google";
 import Footer from "../components/footer/Footer";
 import NavBar from "../components/navBar/NavBar";
+import GoogleTranslate from "../components/GoogleTranslate";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`$ ${archivo.variable} antialiased relative `}>
+        <GoogleTranslate />
         <NavBar />
         {children}
         <Footer />

@@ -1,9 +1,37 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import footerWorld from "../../../../public/assets/footerworld.png";
 import SlideUpWrapper from "../../SlideUpWrapper";
+import { FaSpinner } from "react-icons/fa";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isloading, setIsLoading] = useState(false);
+  const handleFieldChange = (e) => {
+    const fieldName = e.target.name;
+    const value = e.target.value;
+    setFormData((prev) => ({
+      ...prev,
+      [fieldName]: value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    setIsLoading(false);
+  };
+
   return (
     <div id="contactSection" className="footerBackground">
       <SlideUpWrapper className="pt-[10%] max-md:px-[6%] px-[3%] lg:pt-[5%] xl:pt-[4%]">
@@ -16,7 +44,10 @@ const ContactSection = () => {
         </p>
       </SlideUpWrapper>
 
-      <form className="w-full lg:max-w-257 mx-auto px-[4%]">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full lg:max-w-257 mx-auto px-[4%]"
+      >
         <div className="w-full mb-6 flex gap-2 flex-col lg:flex-row">
           <div className="w-full">
             <label
@@ -27,6 +58,9 @@ const ContactSection = () => {
             </label>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleFieldChange}
               className=" shadow-md py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
             />
           </div>
@@ -39,6 +73,9 @@ const ContactSection = () => {
             </label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleFieldChange}
               className=" shadow-md py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
             />
           </div>
@@ -51,15 +88,25 @@ const ContactSection = () => {
             Message <span className="text-red-600">*</span>
           </label>
           <textarea
-            name=""
-            id=""
+            value={formData.message}
+            name="message"
+            onChange={handleFieldChange}
             rows={4}
             className="shadow-sm py-3 px-2.5 w-full bg-white border border-slate-300 rounded-md resize-none outline-none"
           />
         </div>
 
-        <button className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out shadow-sm mb-5">
-          Submit
+        <button
+          type="submit"
+          className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out shadow-sm mb-5"
+        >
+          {isloading ? (
+            <span className="flex items-center justify-center gap-4">
+              <FaSpinner className="animate-spin h-6 w-6 text-light-gray" />
+            </span>
+          ) : (
+            "Submit"
+          )}
         </button>
       </form>
 

@@ -93,7 +93,21 @@ html {
 .mySwiper .swiper-pagination-bullet:hover {
   background-color: aqua;
 }
+
 .mySwiper .swiper-pagination-bullet-active {
   background-color: #c3c3c3;
   opacity: 1;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+.skiptranslate > iframe {
+  display: none !important;
+}
+.skiptranslate {
+  display: none !important;
 }
