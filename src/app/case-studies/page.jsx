@@ -3,6 +3,8 @@ import CaseStudy from "../../components/commonCase/CommonStudyCase";
 
 export const metadata = {
   title: "Case Study - Business Consultants",
+  description:
+    "Explore detailed case studies demonstrating the impact of our consulting services on client success across various industries.",
 };
 const page = () => {
   return (

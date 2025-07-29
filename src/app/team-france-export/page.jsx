@@ -9,6 +9,8 @@ import Work from "../../components/team-france/work/WorkUs";
 
 export const metadata = {
   title: "Team France Expoet - Business Consultants",
+  description:
+    "Empowering businesses with expert consulting and export services from France to help navigate global markets and drive international growth.",
 };
 const page = () => {
   return (

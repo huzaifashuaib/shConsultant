@@ -27,9 +27,9 @@ const TeamSection = () => {
               />
             </div>
             <div className="flex-1 flex-col px-5 pb-5 pt-16.5 rounded-3xl custom-shadow flex h-full">
-              <h1 className="text-lg md:text-xl text-slate-800 font-medium text-center mt-2">
+              <h2 className="text-lg md:text-xl text-slate-800 font-medium text-center mt-2">
                 {member.name}
-              </h1>
+              </h2>
               <p className="text-lg text-primary text-center font-medium">
                 {member.title}
               </p>

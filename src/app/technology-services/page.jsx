@@ -5,6 +5,8 @@ import TechServices from "../../components/technology-service/techServices/TechS
 
 export const metadata = {
   title: "Technology Service - Business Consultants",
+  description:
+    "We help businesses transform through cutting-edge technology services, strategic consulting, and customized digital solutions.",
 };
 const page = () => {
   return (

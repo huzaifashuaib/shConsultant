@@ -3,6 +3,8 @@ import ListDistributor from "../../components/commonCase/CommonStudyCase";
 
 export const metadata = {
   title: "List of Distributors - Business Consultants",
+  description:
+    "Find trusted distributors across various industries and get strategic business consulting to grow your supply chain and sales network efficiently.",
 };
 const page = () => {
   return (

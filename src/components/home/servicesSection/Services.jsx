@@ -15,9 +15,9 @@ const Services = () => {
           </h1>
 
           <div className="hidden md:flex flex-col items-center space-y-4">
-            <h1 className="text-4xl text-black font-bold tracking-wide">
+            <h2 className="text-4xl text-black font-bold tracking-wide">
               OUR SERVICES
-            </h1>
+            </h2>
             <p className="text-center text-base text-black">
               Services to French companies willing to outsource to their
               products/services to Pakistan (textile made- <br /> ups & apparel,
@@ -48,9 +48,9 @@ const Services = () => {
                   className="pb-3"
                 />
 
-                <h1 className="text-xl md:text-2xl mt-2 max-md:md:mb-4 text-black font-bold text-center">
+                <h3 className="text-xl md:text-2xl mt-2 max-md:md:mb-4 text-black font-bold text-center">
                   {data.title}
-                </h1>
+                </h3>
                 <p className="text-base text-black text-center">{data.text}</p>
               </div>
             </SlideUpWrapper>
