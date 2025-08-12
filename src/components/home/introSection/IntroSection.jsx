@@ -25,7 +25,7 @@ const IntroSection = () => {
         {introData.map((data, index) => (
           <SlideUpWrapper
             key={index}
-            className="max-md:mt-7.5 max-md:mb-10 max-md:px-[4%] first:md:px-0 md:pl-12.5 md:pr-10 last:md:pr-0 last:md:pl-12.5 "
+            className="first:max-md:mt-7.5 max-md:mb-10 last:max-md:mb-0 max-md:px-[4%] first:md:px-0 md:pl-12.5 md:pr-10 last:md:pr-0 last:md:pl-12.5 "
           >
             <Image
               src={data.image}
@@ -37,7 +37,9 @@ const IntroSection = () => {
             <h3 className="text-xl md:text-2xl mt-2 mb-4 text-white font-bold ">
               {data.title}
             </h3>
-            <p className="text-base font-normal text-slate-400">{data.text}</p>
+            <p className="text-base font-normal text-slate-400 max-md:pb-[4%]  last:max-md:pb-0">
+              {data.text}
+            </p>
           </SlideUpWrapper>
         ))}
       </div>
