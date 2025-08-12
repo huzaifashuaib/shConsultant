@@ -96,12 +96,11 @@ const NavBar = () => {
               className=" object-contain max-md:w-[54%] md:max-lg:w-[40%] w-[62%] mx-auto"
             />
           </Link>
-          {/* <GoogleTranslate /> */}
           <ul className=" list-none items-center flex-wrap justify-center lg:max-w-150 xl:max-w-200 2xl:max-w-full hidden lg:flex">
             {navLinks.map((nav, index) => (
               <li
                 key={index}
-                className="px-2.5 py-2 font-normal text-base whitespace-nowrap "
+                className="p-2.5 font-normal text-base whitespace-nowrap "
               >
                 <Link href={nav.href} className="relative group text-slate-600">
                   {nav.name}

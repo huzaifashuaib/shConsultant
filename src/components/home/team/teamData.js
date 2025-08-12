@@ -13,7 +13,7 @@ export const members = [
                 positioning himself as a leading figure in this niche industry.
                 Now, S&H Business Consultants has become a go-to partner for
                 businesses aiming for strategic growth and cross-border
-                opportunities. Saad&apos;s deep market insights and knack for
+                opportunities. Saad's deep market insights and knack for
                 bridging opportunities between France and Pakistan make him an
                 unmatched ally for organizations looking to launch their
                 businesses, expand their global reach and achieve sustainable
@@ -30,7 +30,7 @@ export const members = [
                 and strategic planning. As a key member of S&H Business
                 Consultants, he has been instrumental in promoting French
                 exports to Pakistan in collaboration with the French Economic
-                Services. Hidayat&apos;s expertise in financial analysis, risk
+                Services. Hidayat's expertise in financial analysis, risk
                 management, and compliance has enabled numerous organizations to
                 achieve sustainable growth and operational excellence. His
                 commitment to delivering tailored business solutions and his
