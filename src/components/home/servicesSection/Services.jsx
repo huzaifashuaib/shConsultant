@@ -10,7 +10,7 @@ const Services = () => {
     <section id="services" className="pt-13.75 pb-12.5 md:py-12.5 h-full">
       <SlideUpWrapper>
         <div className="px-[4%] pb-[4%]">
-          <h1 className="text-center text-2xl md:text-xl text-black mb-8.5 font-bold">
+          <h1 className="text-center text-sm text-black mb-8.5 font-semibold">
             An overview of what we do
           </h1>
 
