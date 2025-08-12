@@ -68,19 +68,15 @@ const NavBar = () => {
         onClick={handleToggle}
       />
       <nav className="w-full absolute z-20 px-5 bg-[#EFF4F9] py-4 md:py-2 lg:py-5 lg:bg-transparent max-lg:border-b border-slate-300 max-lg:fixed top-0 inset-x-0 max-lg:z-3 ">
-        <div className="hidden md:flex lg:hidden justify-center gap-3 w-full">
+        <div className="hidden md:flex lg:hidden justify-center gap-1 w-full">
           <button
-            className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
-              currentLang === "en" ? "ring-2 ring-blue-500 scale-125" : ""
-            }`}
+            className="transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer"
             onClick={() => changeLanguage("en")}
           >
             <Image src={usaFlag} alt="us-flag" width={24} height={24} />
           </button>
           <button
-            className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
-              currentLang === "fr" ? "ring-2 ring-blue-500 scale-125" : ""
-            }`}
+            className="transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer"
             onClick={() => changeLanguage("fr")}
           >
             <Image src={frFlag} alt="fr-flag" width={24} height={24} />
@@ -110,10 +106,10 @@ const NavBar = () => {
             ))}
           </ul>
 
-          <div className=" flex flex-row-reverse items-center max-lg:w-full gap-8 md:gap-3 lg:gap-4 md:flex-col-reverse lg:flex-col xl:flex-row  ">
+          <div className=" flex flex-row-reverse items-start  max-lg:w-full gap-8 md:gap-3 max-lg:gap-1 md:flex-col-reverse lg:flex-col xl:flex-row ">
             <Link
               href={"/#contactSection"}
-              className="text-base py-2.5 px-6 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap"
+              className="text-base py-3.5 px-5 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap"
             >
               Contact Us
             </Link>
@@ -125,19 +121,15 @@ const NavBar = () => {
               <FaBars size={20} />
             </button>
 
-            <div className="flex items-center gap-3 justify-end md:hidden lg:flex max-lg:w-full ">
+            <div className="flex gap-1 justify-center md:hidden lg:flex max-lg:w-full ">
               <button
-                className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
-                  currentLang === "en" ? "ring-2 ring-blue-500 scale-125" : ""
-                }`}
+                className="transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer"
                 onClick={() => changeLanguage("en")}
               >
                 <Image src={usaFlag} alt="us-flag" width={24} height={24} />
               </button>
               <button
-                className={` transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer ${
-                  currentLang === "fr" ? "ring-2 ring-blue-500 scale-125" : ""
-                }`}
+                className="transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer "
                 onClick={() => changeLanguage("fr")}
               >
                 <Image src={frFlag} alt="fr-flag" width={24} height={24} />

@@ -25,7 +25,7 @@ const IntroSection = () => {
         {introData.map((data, index) => (
           <SlideUpWrapper
             key={index}
-            className="max-md:mt-7.5 max-md:mb-10 max-md:px-[4%] first:md:pl-0 md:px-10 last:md:pr-0"
+            className="max-md:mt-7.5 max-md:mb-10 max-md:px-[4%] first:md:px-0 md:pl-12.5 md:pr-10 last:md:pr-0 last:md:pl-12.5 "
           >
             <Image
               src={data.image}
