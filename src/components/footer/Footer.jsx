@@ -43,7 +43,7 @@ const Footer = () => {
         onClick={handleBookNowClick}
         className=" fixed bottom-3.75 cursor-pointer right-5 hover:ring-2 hover:ring-customBlue hover:bg-hover-color  bg-primary hover:shadow-xl transition-all duration-150 ease-in-out text-white font-bold text-sm px-7 py-3 rounded-3xl z-40"
       >
-        Book Now
+        Book a call
       </button>
 
       {showModal && (
