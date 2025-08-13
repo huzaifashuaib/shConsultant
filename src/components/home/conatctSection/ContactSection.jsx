@@ -61,7 +61,7 @@ const ContactSection = () => {
               name="name"
               value={formData.name}
               onChange={handleFieldChange}
-              className=" shadow-md py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
+              className=" py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
             />
           </div>
           <div className="w-full">
@@ -76,7 +76,7 @@ const ContactSection = () => {
               name="email"
               value={formData.email}
               onChange={handleFieldChange}
-              className=" shadow-md py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
+              className=" py-3 px-2.5 w-full bg-white border border-slate-300 rounded-sm outline-none"
             />
           </div>
         </div>
@@ -92,13 +92,13 @@ const ContactSection = () => {
             name="message"
             onChange={handleFieldChange}
             rows={4}
-            className="shadow-sm py-3 px-2.5 w-full bg-white border border-slate-300 rounded-md resize-none outline-none"
+            className=" py-3 px-2.5 w-full bg-white border border-slate-300 rounded-md resize-none outline-none"
           />
         </div>
 
         <button
           type="submit"
-          className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out shadow-sm mb-5"
+          className="text-white block rounded-md w-full py-3 cursor-pointer bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color   transition-all duration-150 ease-in-out  mb-5"
         >
           {isloading ? (
             <span className="flex items-center justify-center gap-4">
