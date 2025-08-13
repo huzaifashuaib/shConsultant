@@ -39,7 +39,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-y-10.25 lg:gap-y-13 xl:gap-y-15.25 2xl:gap-y-25">
           {serviceData.map((data, index) => (
             <SlideUpWrapper key={index}>
-              <div className="max-md:mb-10 md:mt-0 px-[4%] md:px-5 flex flex-col items-center last:pb-[4%] h-full">
+              <div className="max-md:mb-10 md:mt-0 px-[4%] md:px-5 flex flex-col items-center h-full">
                 <Image
                   src={data.icon}
                   alt={data.alt}

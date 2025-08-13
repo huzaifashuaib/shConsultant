@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../../public/assets/logo.png";
 import usaFlag from "../../../public/assets/en-us.png";
+import { inter } from "../../libs/fonts";
 import frFlag from "../../../public/assets/fr-flag.png";
 
 const NavBar = () => {
@@ -106,22 +107,22 @@ const NavBar = () => {
             ))}
           </ul>
 
-          <div className=" flex flex-row-reverse items-start  max-lg:w-full gap-8 md:gap-3 max-lg:gap-1 md:flex-col-reverse lg:flex-col xl:flex-row ">
+          <div className="flex flex-row-reverse max-lg:w-full gap-4 max-lg:items-center md:gap-1 xl:gap-5 md:flex-col-reverse lg:flex-col xl:flex-row ">
             <Link
               href={"/#contactSection"}
-              className="text-base py-3.5 px-5 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap"
+              className={`${inter.className} text-base py-3.5 px-5 cursor-pointer transition-all duration-200 ease-in-out rounded-md font-medium bg-primary hover:ring-2 hover:ring-customBlue hover:bg-hover-color text-white shadow-xs lg:flex hidden whitespace-nowrap`}
             >
               Contact Us
             </Link>
 
             <button
               onClick={handleToggle}
-              className=" lg:hidden flex md:justify-end md:w-full lg:w-auto"
+              className=" min-lg:hidden flex md:justify-end md:w-full lg:w-auto"
             >
               <FaBars size={20} />
             </button>
 
-            <div className="flex gap-1 justify-center md:hidden lg:flex max-lg:w-full ">
+            <div className="flex gap-1 items-center justify-start max-lg:justify-end md:hidden lg:flex max-lg:w-full">
               <button
                 className="transform hover:scale-110 rounded-sm transition-all duration-200 ease-in-out cursor-pointer"
                 onClick={() => changeLanguage("en")}

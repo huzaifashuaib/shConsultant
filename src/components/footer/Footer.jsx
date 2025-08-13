@@ -22,8 +22,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto  px-2.5 md:px-10">
-        <p className="text-slate-800 text-base w-full max-md:text-center ">
+      <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto md:px-10 md:py-7">
+        <p className="text-slate-800 text-sm w-full max-md:text-center max-md:p-2.5 max-lg:mt-[4%] ">
           Copyright © {year} S&H Business Consultants &{" "}
           <Link
             href={""}
@@ -32,6 +32,7 @@ const Footer = () => {
             Privacy Policy
           </Link>
         </p>
+
         <Link
           href={"#main"}
           className="p-2.5 font-bold bg-primary cursor-pointer hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-sm transition-all duration-150 ease-in-out text-white rounded-sm"
@@ -39,6 +40,7 @@ const Footer = () => {
           <MdEmail size={15} />
         </Link>
       </div>
+
       <button
         onClick={handleBookNowClick}
         className=" fixed bottom-3.75 cursor-pointer right-5 hover:ring-2 hover:ring-customBlue hover:bg-hover-color  bg-primary hover:shadow-xl transition-all duration-150 ease-in-out text-white font-bold text-sm px-7 py-3 rounded-3xl z-40"
