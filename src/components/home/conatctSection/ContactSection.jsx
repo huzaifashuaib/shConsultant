@@ -5,7 +5,7 @@ import footerWorld from "../../../../public/assets/footerworld.png";
 import SlideUpWrapper from "../../SlideUpWrapper";
 import { FaSpinner } from "react-icons/fa";
 
-const ContactSection = () => {
+const ContactSection = ({ contactId = "contactSection" }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div id="contactSection" className="footerBackground">
+    <div id={contactId} className="footerBackground">
       <SlideUpWrapper className="pt-[10%] max-md:px-[6%] px-[3%] lg:pt-[5%] xl:pt-[4%]">
         <h1 className="text-3xl md:text-4xl text-center mb-3 font-semibold md:font-bold text-slate-800">
           Let&apos;s Talk

@@ -25,7 +25,7 @@ const ExportFrance = () => {
         <p>
           As the{" "}
           <Link
-            href={""}
+            href={"#reference"}
             className="text-light-pink hover:text-slate-700 transition-all ease-in-out duration-200"
           >
             official partner

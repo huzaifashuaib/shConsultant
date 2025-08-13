@@ -55,7 +55,7 @@ html {
   background-position: top left;
 }
 .custom-drop-shadow {
-  filter: drop-shadow(0px 4px 10px rgba(0, 36, 148, 0.6));
+  box-shadow: 0px -4px 44px 0px rgba(0, 15, 61, 0.5);
 }
 .marquee-Gradient {
   mask-image: linear-gradient(

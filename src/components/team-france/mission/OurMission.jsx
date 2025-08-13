@@ -12,7 +12,7 @@ const OurMission = () => {
   return (
     <div className="bg-dark-blue shadow-bg py-10 overflow-hidden">
       <SlideUpWrapper className="max-w-330 mx-auto p-2.5">
-        <h1 className="text-4xl md:text-3xl text-white font-semibold mb-3.5">
+        <h1 className="md:text-4xl max-md:text-3xl text-white font-semibold mb-3.5">
           Our Missions & Objectives
         </h1>
         <p className="text-base md:text-lg text-slate-400 mb-3.5">

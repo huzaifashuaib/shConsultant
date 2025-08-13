@@ -14,7 +14,7 @@ export default function Home() {
       <ServicesSection />
       <KeyFactorSection />
       <TeamSection />
-      <ContactSection />
+      <ContactSection contactId={"contactSection"} />
     </>
   );
 }

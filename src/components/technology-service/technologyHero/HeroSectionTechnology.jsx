@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { manrope } from "../../../libs/fonts";
+import { inter, manrope } from "../../../libs/fonts";
 import { swipeIcons } from "./data.js";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ import SlideUpWrapper from "../../SlideUpWrapper";
 
 const HeroSectionTechnology = () => {
   return (
-    <SlideUpWrapper className="max-w-345 mx-auto pt-12.5  px-5 overflow-x-hidden">
+    <SlideUpWrapper className="max-w-345 mx-auto pt-12.5 max-md:px-2.5 px-5 overflow-x-hidden">
       {/* <div className="max-w-345 mx-auto pt-12.5 p-2.5 overflow-x-hidden"> */}
       <div className="flex flex-col gap-2.5 ">
         <h5
@@ -19,18 +19,25 @@ const HeroSectionTechnology = () => {
           YOUR TECHNOLOGY PARTNER
         </h5>
         <h1
-          className={`text-2xl md:text-6xl text-white md:leading-16 font-semibold tracking-tightest ${manrope.className} mb-4`}
+          className={`text-3xl leading-9 md:text-6xl text-white md:leading-16 font-semibold tracking-tightest ${manrope.className} mb-4`}
         >
-          We transform ideas into <br /> outcomes with a white- <br /> glove
-          approach to cater to <br /> each businesses' unique <br /> needs
+          We transform ideas into
+          <br className="hidden sm:block" /> outcomes with a white-
+          <br className="hidden sm:block" /> glove approach to cater to
+          <br className="hidden sm:block" /> each businesses' unique
+          <br className="hidden sm:block" /> needs
         </h1>
-        <Link
-          href={"/#contactSection"}
-          className="group md:w-fit cursor-pointer text-primary flex py-3.75 px-5 font-medium text-sm rounded-lg bg-white hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 hover:text-white shadow-md"
+        <button
+          onClick={() => {
+            document
+              .getElementById("technologyId")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className={`group md:w-fit cursor-pointer text-primary flex py-3.75 px-5 font-medium text-sm rounded-lg bg-white hover:ring-2 hover:ring-customBlue hover:bg-hover-color  hover:shadow-xl transition-all duration-150 ease-in-out items-center justify-center gap-2 hover:text-white shadow-md ${inter.className}`}
         >
           Contact Us
           <FaLongArrowAltRight className="transform group-hover:translate-x-2 transition-all duration-150 ease-in-out " />
-        </Link>
+        </button>
       </div>
       <div className=" mt-12 md:mt-33.75 md:mb-22.5">
         <div className="marquee-Gradient">

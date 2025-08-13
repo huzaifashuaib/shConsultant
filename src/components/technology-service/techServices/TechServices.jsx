@@ -55,7 +55,7 @@ const TechServices = () => {
             >
               {title}
             </h1>
-            <p className={`text-base text-blue-100 ${manrope.className}`}>
+            <p className={`text-lg text-blue-100 ${manrope.className}`}>
               {desc}
             </p>
           </div>

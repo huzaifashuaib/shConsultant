@@ -168,7 +168,7 @@ const CommonStudyCase = ({ text }) => {
                 <FaSpinner className="animate-spin h-6 w-6 text-light-gray" />
               </span>
             ) : (
-              "Submit"
+              "Send"
             )}
           </button>
         </form>

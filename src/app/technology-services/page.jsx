@@ -16,7 +16,7 @@ const page = () => {
         <HeroSection />
         <TechServices />
       </div>
-      <ContactSection />
+      <ContactSection contactId="technologyId" />
     </>
   );
 };
