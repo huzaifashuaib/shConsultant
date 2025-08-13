@@ -33,10 +33,10 @@ const Footer = () => {
           </Link>
         </p>
         <Link
-          href={"saad.mahmud@snhconsultants.co"}
-          className="p-2.5 bg-primary cursor-pointer hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-sm transition-all duration-150 ease-in-out text-white rounded-sm"
+          href={"#main"}
+          className="p-2.5 font-bold bg-primary cursor-pointer hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-sm transition-all duration-150 ease-in-out text-white rounded-sm"
         >
-          <MdEmail size={18} />
+          <MdEmail size={15} />
         </Link>
       </div>
       <button

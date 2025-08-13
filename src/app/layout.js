@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`$ ${archivo.variable} antialiased relative `}>
+      <body className={`$ ${archivo.variable} antialiased relative `} id="home">
         <GoogleTranslate />
         <NavBar />
         {children}
