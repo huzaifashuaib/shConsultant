@@ -15,7 +15,7 @@ export const keyFactorData = [
   },
   {
     title: "Make Informed Decisions",
-    text: "Don&apos;t let media portrayals alone influence your decision-making process regarding potential opportunities in Pakistan. Instead, rely on real-time updates by contacting us or the Economic Department of the French Embassy for accurate and actionable insights.",
+    text: "Don't let media portrayals alone influence your decision-making process regarding potential opportunities in Pakistan. Instead, rely on real-time updates by contacting us or the Economic Department of the French Embassy for accurate and actionable insights.",
   },
   {
     title: "Security and Safety Considerations",
