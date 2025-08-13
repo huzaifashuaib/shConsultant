@@ -21,7 +21,6 @@ const NavBar = () => {
     { href: "/list-distributors", name: "List of Distributors" },
   ];
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState("en");
   const handleToggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
@@ -36,10 +35,9 @@ const NavBar = () => {
       if (select) {
         select.value = lang;
         select.dispatchEvent(new Event("change"));
-        setCurrentLang(lang);
+
         setTimeout(() => {
           select.dispatchEvent(new Event("change"));
-          setCurrentLang(lang);
         }, 200);
       } else {
         setTimeout(tryChange, 100);
@@ -48,17 +46,6 @@ const NavBar = () => {
     tryChange();
   };
 
-  useEffect(() => {
-    const detectLanguage = () => {
-      const select = document.querySelector(".goog-te-combo");
-      if (select && select.value) {
-        setCurrentLang(select.value);
-      } else {
-        setTimeout(detectLanguage, 100);
-      }
-    };
-    detectLanguage();
-  }, [setCurrentLang]);
   return (
     <>
       {/*Transparency  */}
@@ -90,7 +77,7 @@ const NavBar = () => {
               alt="Site Logo"
               height={0}
               width={0}
-              className=" object-contain max-md:w-[54%] md:max-lg:w-[40%] w-[62%] mx-auto"
+              className=" object-contain max-md:w-[54%] md:max-lg:w-[40%] lg:w-[62%] mx-auto"
             />
           </Link>
           <ul className=" list-none items-center flex-wrap justify-center lg:max-w-150 xl:max-w-200 2xl:max-w-full hidden lg:flex">

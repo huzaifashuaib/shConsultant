@@ -22,8 +22,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto md:px-10 md:py-7">
-        <p className="text-slate-800 text-sm w-full max-md:text-center max-md:p-2.5 max-lg:mt-[4%] ">
+      <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto md:px-15 md:py-4">
+        <p className="text-slate-800 text-sm 2xl:w-full max-2xl:w-5/6 max-md:text-center max-md:p-2.5 max-lg:mt-[4%] ">
           Copyright © {year} S&H Business Consultants &{" "}
           <Link
             href={""}
