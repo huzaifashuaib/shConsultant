@@ -23,7 +23,8 @@ const Footer = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center py-2.5 md:max-w-390 gap-2 mx-auto md:px-15 md:py-4">
-        <p className="text-slate-800 text-sm 2xl:w-full max-2xl:w-5/6 max-md:text-center max-md:p-2.5 max-lg:mt-[4%] ">
+        <p className="text-slate-800 text-sm w-full max-md:text-center max-md:p-2.5 max-lg:mt-[4%] ">
+          {/* <p className="text-slate-800 text-sm 2xl:w-full max-2xl:w-5/6 max-md:text-center max-md:p-2.5 max-lg:mt-[4%] "> */}
           Copyright © {year} S&H Business Consultants &{" "}
           <Link
             href={""}
@@ -33,12 +34,12 @@ const Footer = () => {
           </Link>
         </p>
 
-        <Link
+        {/* <Link
           href={"#main"}
           className="p-2.5 font-bold bg-primary cursor-pointer hover:ring-2 hover:ring-customBlue hover:bg-hover-color hover:shadow-sm transition-all duration-150 ease-in-out text-white rounded-sm"
         >
           <MdEmail size={15} />
-        </Link>
+        </Link> */}
       </div>
 
       <button
