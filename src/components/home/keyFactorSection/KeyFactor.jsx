@@ -17,7 +17,7 @@ const KeyFactor = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0 }}
-        className="max-md:px-5  w-1/2 md:sticky md:top-1/5 md:self-start md:pb-40"
+        className="max-md:px-5 w-full md:w-1/2 md:sticky md:top-1/5 md:self-start md:pb-40"
       >
         <h1 className="text-3xl md:text-4xl font-semibold text-slate-800 pb-4">
           KEY FACTORS
@@ -34,7 +34,7 @@ const KeyFactor = () => {
         </Link>
       </motion.div>
 
-      <div className="w-1/2 pt-[20%] px-[4%] md:pt-22.5 md:pr-12.5 md:pb-12.5 md:pl-25 md:border-l md:border-[#555555]">
+      <div className="w-full md:w-1/2 pt-[20%] px-[4%] md:pt-22.5 md:pr-12.5 md:pb-12.5 md:pl-25 md:border-l md:border-[#555555]">
         {/* <div className="w-1/2 pt-[20%] px-[4%] md:pt-22.5 md:pr-22.5 md:pb-12.5 md:pl-18 md:border-l md:border-[#555555]"> */}
         {keyFactorData.map((data, index) => (
           <SlideUpWrapper

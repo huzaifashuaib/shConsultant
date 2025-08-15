@@ -89,9 +89,6 @@ const TechServices = () => {
               onClick={() => handleClick(index)}
               className={`px-3.75 py-5 md:my-5 md:mx-6.25 cursor-pointer rounded-2xl  ${
                 active && "bg-[#010D2D80] backdrop:blur-xl border border-white"
-              } ${
-                !active &&
-                "hover:bg-[#20253880] hover:border border-white transition-all duration-300 ease-in-out hover:-translate-y-5"
               } `}
             >
               <Image src={icon} alt="icon" width={0} height={0} />
