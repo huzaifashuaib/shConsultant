@@ -1,18 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { technologyData } from "./techData";
 import Image from "next/image";
 import { manrope } from "../../../libs/fonts";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Thumbs } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import "swiper/css/thumbs";
 import SlideUpWrapper from "../../SlideUpWrapper";
 
 const TechServices = () => {
   const [techData, setTechData] = useState(technologyData);
   const [imageSet, setImagesSet] = useState(technologyData[0].images);
+  const [swiperBullets, setSwiperBullets] = useState(false);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  useEffect(() => {
+    const checkScreen = () => setSwiperBullets(window.innerWidth < 768);
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
 
   const handleClick = (index) => {
     const update = technologyData.map((item, i) => ({
@@ -70,8 +79,9 @@ const TechServices = () => {
             dynamicBullets: true,
             clickable: true,
           }}
-          modules={[Pagination]}
-          className="mySwiper"
+          thumbs={{ swiper: thumbsSwiper }}
+          modules={[Pagination, Thumbs]}
+          className="mySwiper !pb-8"
         >
           {techData.map(({ icon, title, desc, active }, index) => (
             <SwiperSlide
@@ -103,10 +113,9 @@ const TechServices = () => {
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
-          pagination={{
-            dynamicBullets: true,
-            clickable: true,
-          }}
+          pagination={
+            !swiperBullets ? { dynamicBullets: true, clickable: true } : false
+          }
           autoplay={{
             delay: 1000,
             disableOnInteraction: false,
