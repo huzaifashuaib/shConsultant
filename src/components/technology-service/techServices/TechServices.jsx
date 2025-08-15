@@ -37,7 +37,7 @@ const TechServices = () => {
         <br />
         offer a new perspective it the pursuit of the best possible outcome.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 max-md:gap-3">
+      <div className=" grid-cols-1 md:grid-cols-3 max-md:gap-3 hidden md:grid">
         {techData.map(({ icon, title, desc, active }, index) => (
           <div
             onClick={() => handleClick(index)}
@@ -61,7 +61,45 @@ const TechServices = () => {
           </div>
         ))}
       </div>
-      <div className=" bg-[#010d2d80] py-10 md:pt-25 w-full rounded-md md:pb-10 ">
+
+      <div className="md:hidden">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {techData.map(({ icon, title, desc, active }, index) => (
+            <SwiperSlide
+              key={index}
+              onClick={() => handleClick(index)}
+              className={`px-3.75 py-5 md:my-5 md:mx-6.25 cursor-pointer rounded-2xl  ${
+                active && "bg-[#010D2D80] backdrop:blur-xl border border-white"
+              } ${
+                !active &&
+                "hover:bg-[#20253880] hover:border border-white transition-all duration-300 ease-in-out hover:-translate-y-5"
+              } `}
+            >
+              <Image src={icon} alt="icon" width={0} height={0} />
+              <h1
+                className={`text-2xl font-semibold text-white mt-2 mb-4 ${manrope.className}`}
+              >
+                {title}
+              </h1>
+              <p
+                className={`text-base md:text-lg text-blue-100 ${manrope.className}`}
+              >
+                {desc}
+              </p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className=" bg-[#010d2d80] py-5 md:py-10 w-full rounded-md md:pb-10 ">
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
@@ -75,7 +113,7 @@ const TechServices = () => {
           }}
           speed={4000}
           modules={[Pagination, Autoplay]}
-          className="mySwiper pb-12 md:max-w-320 mx-auto"
+          className="mySwiper md:pb-12 md:max-w-320 mx-auto"
         >
           {imageSet.map((image, index) => (
             <SwiperSlide key={index}>
