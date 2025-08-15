@@ -59,25 +59,6 @@ const HeroSectionTechnology = () => {
             ))}
           </motion.div>
         </div>
-        <div className="marquee-Gradient">
-          <motion.div
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="flex mt-2 md:mt-8"
-          >
-            {swipeIcons.map((icon, index) => (
-              <Image
-                key={index}
-                src={icon}
-                alt="icon"
-                width={0}
-                height={0}
-                className="w-24 h-full shrink-0 mr-16"
-              />
-            ))}
-          </motion.div>
-        </div>
       </div>
       <hr className="text-slate-800 text-xs" />
     </SlideUpWrapper>
