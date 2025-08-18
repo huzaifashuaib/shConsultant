@@ -32,18 +32,18 @@ const TechServices = () => {
     setImagesSet(update[index].images);
   };
   return (
-    <SlideUpWrapper className="max-w-345 mx-auto p-5 md:py-25 md:px-5 flex flex-col gap-6 md:gap-8">
+    <SlideUpWrapper className="max-w-345 mx-auto p-5 md:py-25 md:px-5 flex flex-col gap-4 md:gap-8">
       {/* <div className="max-w-345 mx-auto p-5 md:py-25 md:p-2.5 flex flex-col gap-6 md:gap-8"> */}
       <h1 className="text-3xl md:text-4xl font-semibold text-white  ">
         TECHNOLOGY SERVICES
       </h1>
       <p className="text-base md:text-lg text-slate-400">
         We transform ideas into digital outcomes to elevate the connection
-        <br />
+        <br className="hidden sm:block" />
         between the brand and its users. We help brands to realize their full
-        <br />
+        <br className="hidden sm:block" />
         potential digitally through creativity and technology. We strive to
-        <br />
+        <br className="hidden sm:block" />
         offer a new perspective it the pursuit of the best possible outcome.
       </p>
       <div className=" grid-cols-1 md:grid-cols-3 max-md:gap-3 hidden md:grid">

@@ -17,7 +17,7 @@ const WorkUs = () => {
               alt={alt}
               width={0}
               height={0}
-              className="w-14 md:w-24 mx-auto"
+              className="w-14 md:w-25 mx-auto"
             />
             <h1 className="mb-3.5 text-base text-slate-400 text-center">
               {text}
