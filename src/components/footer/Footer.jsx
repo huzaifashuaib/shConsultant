@@ -27,7 +27,7 @@ const Footer = () => {
           {/* <p className="text-slate-800 text-sm 2xl:w-full max-2xl:w-5/6 max-md:text-center max-md:p-2.5 max-lg:mt-[4%] "> */}
           Copyright © {year} S&H Business Consultants &{" "}
           <Link
-            href={""}
+            href={"/privacy-policy"}
             className="text-light-pink cursor-pointer hover:text-slate-700 transition-all ease-in-out duration-200 "
           >
             Privacy Policy
