@@ -7,7 +7,7 @@ const PrivacyPolicyPage = () => {
 
   return (
     <div className="max-w-345 mx-auto p-2.5 w-full max-md:mt-30 min-md:max-lg:mt-22 max-md:mb-15 lg:mt-35 mb-8">
-      <h1 className="text-3xl text-custom-black font-semibold text-center">
+      <h1 className="text-4xl text-custom-black font-semibold text-center">
         Privacy Policy
       </h1>
       <p className="text-[28px] text-black font-semibold mt-2 mb-4">
