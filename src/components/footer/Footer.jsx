@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center py-1 md:max-w-390 gap-2 mx-auto md:px-15 ">
+      <div className="flex flex-col md:flex-row items-center py-1 md:max-w-390 gap-2 mx-auto md:px-16 ">
         <p className="text-slate-800 text-sm w-full max-md:text-center max-md:p-2.5 max-lg:mt-[4%] max-sm:mb-12">
           {/* <p className="text-slate-800 text-sm 2xl:w-full max-2xl:w-5/6 max-md:text-center max-md:p-2.5 max-lg:mt-[4%] "> */}
           Copyright © {year} S&H Business Consultants &{" "}
